@@ -15,8 +15,13 @@
   <script type="text/javascript">
     $(document).ready(function(){
         $('.login-box').slideDown('slow');
-        $('btn2').on('click', function(){
-          $('#sexz2').html('Регистрация');
+        $('.btn2').click(function(){
+          $('.login-box').fadeOut('fast');
+          $('.register-box').fadeIn('slow');
+        });
+        $('.btn3').click(function(){
+          $('.register-box').fadeOut('fast');
+          $('.login-box').fadeIn('slow');
         });
     });
   </script>
@@ -37,6 +42,34 @@
 
       <button class="btn" type="button" value="Вход">Вход</button>
       <button class="btn2" type="button" value="Регистрация">Регистрация</button>
+    </div>
+
+    <div class="register-box">
+    <h1 id="sexz22">Регистрация</h1>
+      <div class="textbox2">
+        <i class="fas fa-envelope"></i>
+        <input type="text" placeholder="Имейл" name="" value="">
+      </div>
+
+      <div class="textbox2">
+        <i class="fas fa-user-circle"></i>
+        <input type="text" placeholder="Име" name="" value="">
+      </div>
+
+      <div class="textbox2">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Парола" name="" value="" minlength="8" required>
+      </div>
+
+      <div class="textbox2">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Потвърдете парола" name="" value="">
+      </div>
+
+
+
+      <button class="btn" type="button" value="Вход">Регистрирай се!</button>
+      <button class="btn3" type="button" value="Регистрация">Имате акаунт?</button>
     </div>
   </body>
 </html>
