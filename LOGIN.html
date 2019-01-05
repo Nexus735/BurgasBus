@@ -23,16 +23,22 @@
           $('.register-box').fadeOut('fast');
           $('.login-box').fadeIn('slow');
         });
+        $('.btn').click(function(){
+          $('.login-box').slideUp('fast');
+          $('.access-box').slideDown(500);
+        });
     });
   </script>
 
   <body>
 
+    <!-- Login box -->
+
     <div class="login-box">
     <h1 id="sexz2">Вход в профил</h1>
       <div class="textbox">
         <i class="fas fa-user-circle"></i>
-        <input type="text" placeholder="Име" name="" value="">
+        <input  id="ga" type="text" placeholder="Име" name="" value="">
       </div>
 
       <div class="textbox">
@@ -40,12 +46,23 @@
         <input type="password" placeholder="Парола" name="" value="">
       </div>
 
-      <button class="btn" type="button" value="Вход">Вход</button>
+      <input onclick="laian()" class="btn" type="button" value="Вход">
+
+      <script type="text/javascript">
+        function laian(){
+          var name = document.getElementById('ga').value;
+          var ako = document.getElementById('sexz222');
+          ako.innerHTML = 'Добре дошли, ' + name;
+        }
+      </script>
+
       <button class="btn2" type="button" value="Регистрация">Регистрация</button>
     </div>
 
+    <!-- Register box -->
+
     <div class="register-box">
-    <h1 id="sexz22">Регистрация</h1>
+      <h1 id="sexz22">Регистрация</h1>
       <div class="textbox2">
         <i class="fas fa-envelope"></i>
         <input type="text" placeholder="Имейл" name="" value="">
@@ -68,8 +85,16 @@
 
 
 
-      <button class="btn" type="button" value="Вход">Регистрирай се!</button>
+      <button class="btn4" type="button" value="Вход" >Регистрирай се!</button>
       <button class="btn3" type="button" value="Регистрация">Имате акаунт?</button>
     </div>
+
+    <!-- Access box -->
+
+    <div class="access-box">
+      <h1 id="sexz222"></h1>
+      <a href="Welcome.html"><button class="btn5" type="button" value="Регистрация">Влезте в сайта</button></a>
+    </div>
+
   </body>
 </html>
