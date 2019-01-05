@@ -70,6 +70,7 @@ body
 
 .btn:hover {
   background-color: #e8d888;
+  color: black;
 }
 
 .btn2
@@ -90,6 +91,7 @@ body
 
 .btn2:hover {
   background-color: #e8d888;
+  color: black;
 }
 
 
@@ -160,6 +162,7 @@ body
 
 .btn3:hover {
   background-color: #e8d888;
+  color: black;
 }
 
 .btn4
@@ -180,6 +183,7 @@ body
 
 .btn4:hover {
   background-color: #e8d888;
+  color: black;
 }
 
 
@@ -193,6 +197,9 @@ body
   left: 50%;
   transform: translate(-50%,-50%);
   color: white;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000000;
 }
 
 .btn5
@@ -213,4 +220,5 @@ body
 
 .btn5:hover {
   background-color: #e8d888;
+  color: black;
 }
