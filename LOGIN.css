@@ -9,6 +9,7 @@ body
 }
 .login-box
 {
+  display: none;
   width: 280px;
   position: absolute;
   top: 50%;
@@ -16,7 +17,7 @@ body
   transform: translate(-50%,-50%);
   color: white;
 }
-.login-box h1
+#sexz2
 {
   float: center;
   font-size: 35px;
@@ -61,15 +62,32 @@ body
   font-size: 18px;
   cursor: pointer;
   margin: 12px 0;
+  -webkit-transition:background 0.5s;
+  -moz-transition:background 0.5s;
+  -o-transition:background 0.5s;
+  transition:background 0.5s
 }
 
 .btn:hover {
+  background-color: #e8d888;
+}
+
+.btn2
+{
   width: 100%;
-  background: #e8d888;
+  background: none;
   border: 2px solid #e8d888;
-  color: black;
+  color: white;
   padding: 5px;
   font-size: 18px;
   cursor: pointer;
-  margin: 12px 0;
+  margin: 0px 0;
+  -webkit-transition:background 0.5s;
+  -moz-transition:background 0.5s;
+  -o-transition:background 0.5s;
+  transition:background 0.5s
+}
+
+.btn2:hover {
+  background-color: #e8d888;
 }

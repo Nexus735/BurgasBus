@@ -2,15 +2,29 @@
 <html>
   <head>
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="icon" href="busa.png"></link>
     <meta charset="utf-8">
     <title>Вход в Bustracker</title>
     <link rel="stylesheet" href="LOGIN.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
+
+  <!-- Java -->
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.login-box').slideDown('slow');
+        $('btn2').on('click', function(){
+          $('#sexz2').html('Регистрация');
+        });
+    });
+  </script>
+
   <body>
+
     <div class="login-box">
-      <h1>Вход в профил</h1>
+    <h1 id="sexz2">Вход в профил</h1>
       <div class="textbox">
         <i class="fas fa-user-circle"></i>
         <input type="text" placeholder="Име" name="" value="">
@@ -18,10 +32,11 @@
 
       <div class="textbox">
         <i class="fas fa-lock"></i>
-        <input type="text" placeholder="Парола" name="" value="">
+        <input type="password" placeholder="Парола" name="" value="">
       </div>
 
-      <input class="btn" type="button" name="" value="Вход" href="">
+      <button class="btn" type="button" value="Вход">Вход</button>
+      <button class="btn2" type="button" value="Регистрация">Регистрация</button>
     </div>
   </body>
 </html>
