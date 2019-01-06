@@ -1,0 +1,31 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(BG.jpg) no-repeat;
+  background-size: cover;
+}
+h1
+{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-size: 5em;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #000000;
+}
+p
+{
+  -webkit-text-stroke-color: Black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+}
