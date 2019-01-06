@@ -9,6 +9,8 @@ body
 }
 .btn
 {
+  top: 15%;
+  left: 15%;
   font-family: arial;
   text-transform: uppercase;
   font-size: 30px;
@@ -20,7 +22,7 @@ body
   border: 3px solid #2e3a87;
   display: block;
   text-decoration: none;
-  margin: 300px auto;
+  margin: 20px auto;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #000000;
@@ -63,6 +65,8 @@ body
 }
 .btn1
 {
+  top: 15%;
+  left: 75%;
   font-family: arial;
   text-transform: uppercase;
   font-size: 30px;
