@@ -1,1 +1,199 @@
+<!DOCTYPE html>
 
+<html>
+
+  <head>
+
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="icon" href="busa.png"></link>
+
+    <meta charset="utf-8">
+
+    <title>Вход в Bustracker</title>
+
+    <link rel="stylesheet" href="LOGIN.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  </head>
+
+
+
+  <!-- Java -->
+
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $('.login-box').slideDown('slow');
+
+        $('.btn2').click(function(){
+
+          $('.login-box').fadeOut('fast');
+
+          $('.register-box').fadeIn('slow');
+
+        });
+
+        $('.btn3').click(function(){
+
+          $('.register-box').fadeOut('fast');
+
+          $('.login-box').fadeIn('slow');
+
+        });
+
+        $('.btn').click(function(){
+
+          $('.login-box').slideUp('fast');
+
+          $('.access-box').slideDown(500);
+
+        });
+
+    });
+
+  </script>
+
+
+
+  <body>
+
+
+
+    <!-- Login box -->
+
+
+
+    <div class="login-box">
+
+    <h1 id="sexz2">Вход в профил</h1>
+
+      <div class="textbox">
+
+        <i class="fas fa-user-circle"></i>
+
+        <input  id="ga" type="text" placeholder="Име" name="" value="">
+
+      </div>
+
+
+
+      <div class="textbox">
+
+        <i class="fas fa-lock"></i>
+
+        <input type="password" placeholder="Парола" name="" value="">
+
+      </div>
+
+
+
+      <input onclick="laian()" class="btn" type="button" value="Вход">
+
+
+
+      <script type="text/javascript">
+
+        function laian(){
+
+          var name = document.getElementById('ga').value;
+
+          var ako = document.getElementById('sexz222');
+
+          ako.innerHTML = 'Добре дошли, ' + name;
+
+        }
+
+      </script>
+
+
+
+      <button class="btn2" type="button" value="Регистрация">Регистрация</button>
+
+    </div>
+
+
+
+    <!-- Register box -->
+
+
+
+    <div class="register-box">
+
+      <h1 id="sexz22">Регистрация</h1>
+
+      <div class="textbox2">
+
+        <i class="fas fa-envelope"></i>
+
+        <input type="text" placeholder="Имейл" name="" value="">
+
+      </div>
+
+
+
+      <div class="textbox2">
+
+        <i class="fas fa-user-circle"></i>
+
+        <input type="text" placeholder="Име" name="" value="">
+
+      </div>
+
+
+
+      <div class="textbox2">
+
+        <i class="fas fa-lock"></i>
+
+        <input type="password" placeholder="Парола" name="" value="" minlength="8" required>
+
+      </div>
+
+
+
+      <div class="textbox2">
+
+        <i class="fas fa-lock"></i>
+
+        <input type="password" placeholder="Потвърдете парола" name="" value="">
+
+      </div>
+
+
+
+
+
+
+
+      <button class="btn4" type="button" value="Вход" >Регистрирай се!</button>
+
+      <button class="btn3" type="button" value="Регистрация">Имате акаунт?</button>
+
+    </div>
+
+
+
+    <!-- Access box -->
+
+
+
+    <div class="access-box">
+
+      <h1 id="sexz222"></h1>
+
+      <a href="Welcome.html"><button class="btn5" type="button" value="Регистрация">Влезте в сайта</button></a>
+
+    </div>
+
+
+
+  </body>
+
+</html>
